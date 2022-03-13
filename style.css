@@ -32,10 +32,12 @@ header {
 .header_links {
     font-size: 1.2em;
     margin-top: auto;
+    color: #6c7073;
 }
 
 .header_menu_items {
     margin-top: auto;
+    padding-bottom: 5px;
 }
 
 .header_left {
@@ -97,8 +99,13 @@ ol {
 
 footer {
     min-height: 50px;
-    background-color: lightgrey;
+    background-color: #f3f3f3;
     
+}
+
+.footer-container {
+    max-width: 80%;
+    margin: auto;
 }
 
 .footer_left_side, .footer_right_side {
@@ -112,17 +119,21 @@ footer {
 }
 
 span {
-    color: darkgray;
+    color: #a4a4a4;
     font-size: 5px;
 }
 
 .footer_links {
     font-size: 0.8em;
+    color: darkgray;
+}
+
+.header_links {
+    color: #6c7073;
 }
 
 .footer_links, .header_links {
     text-decoration: none;
-    color: darkgray;
     padding: 10px; 
 }
 
@@ -149,7 +160,7 @@ select {
         display: block;
     }
 
-    footer {
+    .footer-container {
         display: flex;
         justify-content: space-between;
     }
@@ -165,7 +176,7 @@ select {
         display: none;
     }
 
-    footer {
+    .footer-container {
         display: flex;
         flex-direction: column-reverse;
     }
