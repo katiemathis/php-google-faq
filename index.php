@@ -44,8 +44,8 @@ $faqs = [
                 <p> Keep in mind that Google services are essentially the same regardless of the affiliate that provides the services or your country association.</p>',
             'subtitle' => 'Determining the country associated with your account',
             'subtext' => 'When you create a new account, we associate your account with a country based on where you created your Google Account. 
-                For accounts at least a year old, we use the country from which you usually access Google services — typically where you’ve spent the most time in the last year.*
-                Frequent travel doesn’t generally affect the country associated with your account. If you move to a new country, it can take about a year for your country association to update.*
+                For accounts at least a year old, we use the country from which you usually access Google services — typically where you’ve spent the most time in the last year. *
+                Frequent travel doesn’t generally affect the country associated with your account. If you move to a new country, it can take about a year for your country association to update. *
                 If the country associated with your account doesn’t correspond to your country of residence, it could be because of a difference between your country of work and residence, 
                 because you’ve installed a Virtual Private Network (VPN) to mask your IP address, or because you live close to a territorial border. <a href="#" style="color:#3367d6">Contact us</a> if you think your country association is wrong.'   
         ],
@@ -155,13 +155,16 @@ $footerMenuItems = [
 
                 foreach($faq as $key => $singleFAQ) {
                     $answer = explode('*', $singleFAQ['answer']);
+                    $subAnswer = explode('*', $singleFAQ['subtext']);
 
                     for($i=0;$i<count($answer);$i++) {
                         echo '<p class="answer">' . $answer[$i]. '</p>';
                     }
                     if ($singleFAQ['subtitle'] != '' && $singleFAQ['subtext'] != '') {
                         echo '<h4 class="subtitle">' . $singleFAQ['subtitle'] . '</h4>';
-                        echo '<p class="subtext">' . $singleFAQ['subtext'] . '</p>';
+                        for($i=0;$i<count($subAnswer);$i++) {
+                            echo '<p class="answer">' . $subAnswer[$i]. '</p>';
+                        }
                     }
 
                 }
