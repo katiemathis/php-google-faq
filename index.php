@@ -81,7 +81,7 @@ $headerMenuItems = [
     'item2' => 'Privacy Policy',
     'item3' => 'Terms of Service',
     'item4' => 'Technologies',
-    'item5' => '<span style="color:blue;padding-bottom: 3px;border-bottom:3px solid blue;font-style:bold; font-size:1.1em">FAQ</span>',
+    'item5' => '<span style="color:blue;padding-bottom:4px;border-bottom:3px solid blue;font-style:bold; font-size:1.1em">FAQ</span>',
 
 ];
 
