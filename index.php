@@ -104,6 +104,7 @@ $footerMenuItems = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google FAQ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;800&family=Outfit:wght@600&family=Source+Sans+Pro:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -151,7 +152,7 @@ $footerMenuItems = [
         <div class="faqs">
            <?php 
            foreach ($faqs as $key => $faq) {
-                echo '<h3 class="question">' . $key . '</h3>';
+                echo '<h2 class="question">' . $key . '</h2>';
 
                 foreach($faq as $key => $singleFAQ) {
                     $answer = explode('*', $singleFAQ['answer']);

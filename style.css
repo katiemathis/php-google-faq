@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #3e4043;
 }
 
@@ -70,8 +70,8 @@ header {
 
 .privacy-terms {
     color: #5f6367;
-    margin: 20px 0;
-    font-weight: 300;
+    margin: 18px 0;
+    font-weight: 400;
     font-size: 1.3em;
 
 }
@@ -99,7 +99,9 @@ header {
 
 .main_content {
     max-width: 80%;
-    margin: 70px auto 0 auto;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu_icon {
@@ -119,6 +121,10 @@ header {
 
 .faqs {
     padding: 15px;
+}
+
+.question, .subtitle {
+    font-weight: 400;
 }
 
 .question, .answer, .subtitle, .subtext {
@@ -213,9 +219,14 @@ select {
         display: none;
     }
 
+    .main_content {
+        max-width: 90%;
+    }
+
     .footer-container {
         display: flex;
         flex-direction: column-reverse;
+        max-width: 90%;
     }
 
     .footer_left_side {
