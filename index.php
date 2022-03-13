@@ -1,5 +1,6 @@
 <?php
 
+/*faq array*/
 $faqs = [
     'How are you implementing the recent Court of Justice of the European Union (CJEU) decision on the right to be forgotten?' => [
         [
@@ -74,6 +75,7 @@ $faqs = [
     ]
 ];
 
+/*header menu array*/
 $headerMenuItems = [
     'item1' => 'Overview',
     'item2' => 'Privacy Policy',
@@ -83,6 +85,7 @@ $headerMenuItems = [
 
 ];
 
+/*footer menu array*/
 $footerMenuItems = [
     'item1' => 'Google',
     'item2' => 'About Google',
@@ -105,7 +108,10 @@ $footerMenuItems = [
 </head>
 <body>
 
+    <!-- begin header -->
     <header>
+
+    <!-- begin left header items -->
         <div class="header_left">
         <a href="#" id="header-menu"><i class="fas fa-bars menu_icon"></i></a>
         <?php
@@ -114,15 +120,26 @@ $footerMenuItems = [
         ?>
         <h2 id="faq" class="menu_item">FAQ</h2>
         </div>
+    <!-- end left header items -->
+
+    <!-- begin right header items -->
         <div class="header_right">
             <a href="#"><i class="fas fa-th menu_icon"></i></a>
             <div class="image_container">
                 <img src="img/katie.jpeg" alt="user">
             </div>
         </div>
+
+    <!-- end left header items -->
     </header>
 
+    <!-- end header -->
+
+    <!-- begin main content -->
+
     <main class="main_content">
+
+    <!-- begin faq's -->
         <div class="faqs">
            <?php 
            foreach ($faqs as $key => $faq) {
@@ -143,17 +160,25 @@ $footerMenuItems = [
 
             } ?>
         </div>
+    <!-- end faq's -->
 
     </main>
+    <!-- end main content -->
 
+    <!-- begin footer -->
     <footer>
         <div class="footer-container">
+
+        <!-- begin left side footer -->
             <div class="footer_left_side">
                 <?php
                     foreach ($footerMenuItems as $item)
                         echo '<p class="footer_menu_items"><a href="#" class="footer_links">' .$item. '</a><span> * </span></p>'
                 ?>
             </div>
+        <!-- end left side footer -->
+
+        <!-- begin right side footer -->
             <div class="footer_right_side">
                 <i class="fa fa-globe"></i>
                 <select class="iCthae" id="i3" jsname="O1htCb">
@@ -221,9 +246,11 @@ $footerMenuItems = [
                     <option value="ja">日本語</option></select>
 
             </div>
+        <!-- end right side footer -->
         </div>
 
     </footer>
+    <!-- end footer -->
     
 </body>
 </html>
