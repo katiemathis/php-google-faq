@@ -221,6 +221,7 @@ select {
 
     .main_content {
         max-width: 90%;
+        margin-top: 70px;
     }
 
     .footer-container {
