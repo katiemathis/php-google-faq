@@ -114,11 +114,19 @@ $footerMenuItems = [
     <!-- begin left header items -->
         <div class="header_left">
         <a href="#" id="header-menu"><i class="fas fa-bars menu_icon"></i></a>
-        <?php
-                foreach ($headerMenuItems as $item)
-                    echo '<p class="header_menu_items"><a href="#" class="header_links">' .$item. '</a></p>'
-        ?>
         <h2 id="faq" class="menu_item">FAQ</h2>
+            <div class="full-screen">
+                <div class="logo-container">
+                    <img class="logo" src="img/googlelogo_color_74x24dp.png" alt="logo">
+                    <h3 class="privacy-terms">Privacy & Terms</h3>
+                </div>
+                <div class="header-menu-full-screen">
+                    <?php
+                            foreach ($headerMenuItems as $item)
+                                echo '<p class="header_menu_items"><a href="#" class="header_links">' .$item. '</a></p>'
+                    ?>
+                </div>
+            </div>
         </div>
     <!-- end left header items -->
 
@@ -126,7 +134,7 @@ $footerMenuItems = [
         <div class="header_right">
             <a href="#"><i class="fas fa-th menu_icon"></i></a>
             <div class="image_container">
-                <img src="img/katie.jpeg" alt="user">
+                <img class="user" src="img/katie.jpeg" alt="user">
             </div>
         </div>
 
