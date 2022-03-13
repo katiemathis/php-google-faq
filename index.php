@@ -74,6 +74,15 @@ $faqs = [
     ]
 ];
 
+$headerMenuItems = [
+    'item1' => 'Overview',
+    'item2' => 'Privacy Policy',
+    'item3' => 'Terms of Service',
+    'item4' => 'Technologies',
+    'item5' => '<span style="color:blue;border-bottom:3px solid blue;font-style:bold; font-size:1.1em">FAQ</span>',
+
+];
+
 $footerMenuItems = [
     'item1' => 'Google',
     'item2' => 'About Google',
@@ -98,11 +107,15 @@ $footerMenuItems = [
 
     <header>
         <div class="header_left">
-        <i class="fas fa-bars menu_icon"></i>
-        <h2 class="menu_item">FAQ</h2>
+        <a href="#" id="header-menu"><i class="fas fa-bars menu_icon"></i></a>
+        <?php
+                foreach ($headerMenuItems as $item)
+                    echo '<p class="header_menu_items"><a href="#" class="header_links">' .$item. '</a></p>'
+        ?>
+        <h2 id="faq" class="menu_item">FAQ</h2>
         </div>
         <div class="header_right">
-            <i class="fas fa-th menu_icon"></i>
+            <a href="#"><i class="fas fa-th menu_icon"></i></a>
             <div class="image_container">
                 <img src="img/katie.jpeg" alt="user">
             </div>
@@ -141,7 +154,7 @@ $footerMenuItems = [
             ?>
         </div>
         <div class="footer_right_side">
-            <p>logo</p>
+            <i class="fa fa-globe"></i>
             <select class="iCthae" id="i3" jsname="O1htCb">
                 <option value="af">Afrikaans</option>
                 <option value="id">Bahasa Indonesia</option>
